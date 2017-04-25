@@ -12,11 +12,17 @@ var underscores =[];
 
 //---------------------------------------------
 var testWord = 	"rEdRedred"; 
-var testLetter =["R"];
+var testLetter ="E";
 var indices = [];
 //---------------------------------------------
 
 
+
+//steal contains function 
+
+var contains = function (haystack, needle) {
+	return !!~haystack.indexOf(needle)
+};
 
 
 //---------------------------------------------
@@ -31,6 +37,7 @@ console.log(blankWord)
 
 //---------------------------------------------
 
+testWord = testWord.toLowerCase()
 var testArray = testWord.split("");
 
 //---------------------------------------------
@@ -73,11 +80,9 @@ return userGuess = ""
 
 
 //write a function that will find all instances of a letter for a given word
-/*
-	var testWord = "redredred" ; */
+
 function checkTestLetter(testLetter, testWord) {
 	indices = [];
-	var testLetter;
 	testLetter = testLetter.toLowerCase()
 	testWord = testWord.toLowerCase()
 	var testWordLetters = testWord.split("")
@@ -91,7 +96,28 @@ function checkTestLetter(testLetter, testWord) {
 
 // ----------------------------------------------------------------------------
 
-var userGuessRightAt = [];
-var userGuessRightAt = checkTestLetter("e", "redREDred")
+var userGuessRightAt = checkTestLetter('e', 'redredred')
 console.log(userGuessRightAt)
 
+
+//replace blankWord with testLetter 
+function replaceUnderScoreWithTestLetter() {
+	for (var counter = 0; counter < userGuessRightAt.length; counter++) {
+		blankWord[userGuessRightAt[counter]] = testLetter[0];
+	}
+}
+
+// -------- 
+
+
+// if userGuess is wrong, push to wrong list 
+var userStrikes = [];
+var count = 0;
+function userGuessedWrong(userGuessRightAt) {
+	if (userGuessRightAt.length === 0) {
+		userStrikes.push(testLetter);
+		count++ ;
+	}
+
+	return count
+}

@@ -154,3 +154,29 @@ function mapGuessLetterToIndices(testLetter, indices) {
  mapGuessLetterToIndices(('r', indices))
 
 */
+
+// lets not try to assign _ = testLetter this way 
+/*var userGuessRightAt = [];
+var userGuessRightAt = checkTestLetter("e", "redREDred")
+console.log(userGuessRightAt) // = 1, 4, 7
+console.log(blankWord) // a lot of underscores 
+console.log(testLetter) // e 
+
+function replaceBlankWordWithUserGuessRight(userGuessRightAt, testLetter) {
+	for (var counter = 0; counter < userGuessRightAt.length; counter++) {
+		blankWord[userGuessRightAt] = testArray[userGuessRightAt].forEach()
+	}
+}
+
+console.log(blankWord)
+console.log(replaceBlankWordWithUserGuessRight([1,4,7], "rEdRedred"))*/
+
+
+// ask why this doesn't work 
+/*var _testVar = [1];
+console.log(_testVar)
+if (_testVar == [1]) {
+	console.log("works")
+} else {
+	console.log("false")
+}*/
