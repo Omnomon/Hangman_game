@@ -2,16 +2,27 @@
 <html>
 <head>
 	<title>Hangman</title>
-
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<script type="text/javascript" src="assets/javascript/game.js"></script>
+ 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
-<body>
+<body class="container">
+	<div class="row col-xs-12"><img class="col-xs-12" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=50"></div>
+	<div class="row" id="noose_container">
+		<div class="col-xs-4"></div>
+		<div class="col-xs-5"><img class="image-fluid" id="noose" src="assets/images/platform.png"></div>
+		<div class="col-xs-3"></div>
 
-	<div id="hangman">
-			text to be replaced 
+	<div class="row">
+		<div class="col-xs-8" id="theWord"><img class="col-xs-12" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150">hangman word goes in above panel  </div>
+		<div id="panel_right" class="col-xs-4">
+			<div id="letter_correct" class="col-xs-12"><img class="col-xs-12" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150"></div>
+			<div id="letter_incorrect" class="col-xs-12"><img class="col-xs-12" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150"></div>
+		</div>
 	</div>
-
 
 </body>
 </html>
