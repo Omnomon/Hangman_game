@@ -48,22 +48,10 @@
     float: left;    
 }
 
-.container {
-    width: 100%;
+.panel_left {
+    background-position: orange;
 }
 
-.placeholder {
-    background: orange;
-}
-
-.placeholder2 {
-    background: blue;
-}
-
-.placeholder3 {
-    background-position: pink;
-}
-
-.hanger {
-    float: none;
+.panel_right {
+    background-position: green;
 }
